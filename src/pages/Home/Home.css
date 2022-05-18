@@ -1,0 +1,67 @@
+.custom-background-1 {
+  background-image: url("../../assets/home_jumbotrone.png");
+  background-color: #111827; /* Used if the image is unavailable */
+  height: 900px; /* You must set a specified height */
+  /* background-position: center;  */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  /* background-size: cover; */
+}
+
+.custom-button-1 {
+  background: linear-gradient(86.95deg, #3b82f6 2.58%, #d946ef 105.04%), #f9fafb;
+}
+
+.custom-text-1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 84px;
+  /* or 120% */
+
+  letter-spacing: 0.02em;
+
+  background: linear-gradient(93.54deg, #3b82f6 9.03%, #d946ef 43.88%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.07);
+}
+/* .custom_text_color_1{
+  color: #0F766E;
+}
+.custom_text_color_2{
+  color: #FB923C;
+}
+.custom_text_color_3{
+  color: #CA8A04;
+}
+.custom_text_color_4{
+  color: #6A62B7;
+} */
+
+.custom-widget-1 {
+  background: linear-gradient(
+    109.56deg,
+    #ccfbf1 8.75%,
+    #bbdce9 101.85%,
+    #99f6e4 101.85%
+  );
+  border-radius: 28px;
+}
+.custom-widget-2 {
+  background: linear-gradient(128.14deg, #ffedd5 2.71%, #fed7aa 97.55%);
+  border-radius: 28px;
+}
+.custom-widget-3 {
+  background: linear-gradient(127.16deg, #fef9c3 3.85%, #fef08a 95.73%);
+  border-radius: 28px;
+}
+.custom-widget-4 {
+  background: linear-gradient(109.56deg, #f3e8ff 8.75%, #d8b4fe 101.85%);
+  border-radius: 28px;
+}
+.custom-widget-5 {
+  background: linear-gradient(180deg, #ddd6fe 0%, #a78bfa 100%);
+  border-radius: 28px;
+}
+

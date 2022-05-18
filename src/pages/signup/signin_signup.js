@@ -10,7 +10,7 @@ const Signup_Signin = () => {
           <p className="font-[Open Sans] font-semibold text-[20px]">
             I already have an account
           </p>
-          <p className="font-[Open Sans] text-[16px] text-[#B1AFB5] mt-4">
+          <p className="font-[Open Sans] text-[16px] text-[#808080] mt-4">
             Signin with your email and password
           </p>
           <div className="w-full relative group mt-10">
@@ -65,18 +65,18 @@ const Signup_Signin = () => {
           <p className="font-[Open Sans] font-semibold text-[20px]">
             I do not have an account
           </p>
-          <p className="font-[Open Sans] text-[16px] text-[#B1AFB5] mt-4">
+          <p className="font-[Open Sans] text-[16px] text-[#808080] mt-4">
             Signup with your email and password
           </p>
           <div className="w-full relative group mt-10">
             <input
               type="text"
-              id="email"
+              id="display"
               required
               className="w-full h-10 text-sm peer outline-none border-b-2 p-2"
             />
             <label
-              for="email"
+              for="display"
               className="text-[#8A8B8B] pb-4 transform transition-all absolute top-0 left-0 h-full flex items-center pl-1 text-sm group-focus-within:text-xs peer-valid:text-xs group-focus-within:h-1/2 peer-valid:h-1/2 group-focus-within:-translate-y-full peer-valid:-translate-y-full group-focus-within:pl-0 peer-valid:pl-0"
             >
               Display Name
@@ -88,13 +88,31 @@ const Signup_Signin = () => {
           </div>
           <div className="w-full relative group mt-10">
             <input
-              type="password"
-              id="password"
+              type="text"
+              id="email_"
               required
               className="w-full h-10 text-sm peer outline-none border-b-2 p-2"
             />
             <label
-              for="password"
+              for="email_"
+              className="text-[#8A8B8B] pb-4 transform transition-all absolute top-0 left-0 h-full flex items-center pl-1 text-sm group-focus-within:text-xs peer-valid:text-xs group-focus-within:h-1/2 peer-valid:h-1/2 group-focus-within:-translate-y-full peer-valid:-translate-y-full group-focus-within:pl-0 peer-valid:pl-0"
+            >
+             Email
+            </label>
+
+            {/* <label className="text-[#8A8B8B] pb-4 transform transition-all absolute top-0 left-0 h-full flex items-center pl-1 text-sm group-focus-within:text-xs peer-valid:text-xs group-focus-within:h-1/2 peer-valid:h-1/2 group-focus-within:-translate-y-full peer-valid:-translate-y-full group-focus-within:pl-0 peer-valid:pl-0">
+            Email
+          </label> */}
+          </div>
+          <div className="w-full relative group mt-10">
+            <input
+              type="password"
+              id="password_"
+              required
+              className="w-full h-10 text-sm peer outline-none border-b-2 p-2"
+            />
+            <label
+              for="password_"
               className="text-[#8A8B8B] pb-4 transform transition-all absolute top-0 left-0 h-full flex items-center pl-1 text-sm group-focus-within:text-xs peer-valid:text-xs group-focus-within:h-1/2 peer-valid:h-1/2 group-focus-within:-translate-y-full peer-valid:-translate-y-full group-focus-within:pl-0 peer-valid:pl-0"
             >
               Password
@@ -107,46 +125,26 @@ const Signup_Signin = () => {
           <div className="w-full relative group mt-10">
             <input
               type="password"
-              id="password"
+              id="confirm password"
               required
               className="w-full h-10 text-sm peer outline-none border-b-2 p-2"
             />
             <label
-              for="password"
+              for="confirm password"
               className="text-[#8A8B8B] pb-4 transform transition-all absolute top-0 left-0 h-full flex items-center pl-1 text-sm group-focus-within:text-xs peer-valid:text-xs group-focus-within:h-1/2 peer-valid:h-1/2 group-focus-within:-translate-y-full peer-valid:-translate-y-full group-focus-within:pl-0 peer-valid:pl-0"
             >
-              Password
+              Confirm Password
             </label>
 
             {/* <label className="text-[#8A8B8B] pb-4 transform transition-all absolute top-0 left-0 h-full flex items-center pl-1 text-sm group-focus-within:text-xs peer-valid:text-xs group-focus-within:h-1/2 peer-valid:h-1/2 group-focus-within:-translate-y-full peer-valid:-translate-y-full group-focus-within:pl-0 peer-valid:pl-0">
             Email
           </label> */}
           </div>
-          <div className="w-full relative group mt-10">
-            <input
-              type="password"
-              id="password"
-              required
-              className="w-full h-10 text-sm peer outline-none border-b-2 p-2"
-            />
-            <label
-              for="password"
-              className="text-[#8A8B8B] pb-4 transform transition-all absolute top-0 left-0 h-full flex items-center pl-1 text-sm group-focus-within:text-xs peer-valid:text-xs group-focus-within:h-1/2 peer-valid:h-1/2 group-focus-within:-translate-y-full peer-valid:-translate-y-full group-focus-within:pl-0 peer-valid:pl-0"
-            >
-              Password
-            </label>
-
-            {/* <label className="text-[#8A8B8B] pb-4 transform transition-all absolute top-0 left-0 h-full flex items-center pl-1 text-sm group-focus-within:text-xs peer-valid:text-xs group-focus-within:h-1/2 peer-valid:h-1/2 group-focus-within:-translate-y-full peer-valid:-translate-y-full group-focus-within:pl-0 peer-valid:pl-0">
-            Email
-          </label> */}
-          </div>
-          <div className="flex items-center justify-between mt-10">
-            <div className="px-7 py-3 rounded-[5px] bg-[#331947] text-[white]">
-              Sign in
+          <div className=" mt-10">
+            <div className="w-[150px] text-center px-7 py-3 rounded-[5px] bg-[#331947] text-[white]">
+              Sign Up
             </div>
-            <div className="px-7 py-3 rounded-[5px] bg-[#497DF6] text-[white]">
-              Sign in with Google
-            </div>
+           
           </div>
         </div>
       </div>
